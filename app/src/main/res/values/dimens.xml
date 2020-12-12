@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heightPlatziLogo">45dp</dimen>
+    <dimen name="toolbarHeight">30dp</dimen>
+    <dimen name="cardCornerRadius">4dp</dimen>
+    <dimen name="imageViewHomeHeight">150dp</dimen>
+    <dimen name="tamanioTitulo">20sp</dimen>
+    <dimen name="homeMarginSubtitle">10dp</dimen>
+    <dimen name="subtitleSize">15sp</dimen>
+    <dimen name="itemScheduleTitulo">30sp</dimen>
+    <dimen name="itemScheduleSubTitle">20sp</dimen>
+
+</resources>

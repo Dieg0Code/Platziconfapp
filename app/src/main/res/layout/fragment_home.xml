@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/shape_parrafo">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/imageViewHomeHeight"
+                        android:src="@drawable/banner_platzi_conf" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/homeMarginSubtitle"
+                        android:layout_marginTop="@dimen/homeMarginSubtitle"
+                        android:layout_marginRight="@dimen/homeMarginSubtitle"
+                        android:layout_marginBottom="@dimen/homeMarginSubtitle"
+                        android:text="@string/inicio_frag_tv_que_es"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/tamanioTitulo"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/homeMarginSubtitle"
+                        android:layout_marginTop="@dimen/homeMarginSubtitle"
+                        android:layout_marginRight="@dimen/homeMarginSubtitle"
+                        android:layout_marginBottom="@dimen/homeMarginSubtitle"
+                        android:text="@string/inicio_frag_tv_que_es_resp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/subtitleSize" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/shape_parrafo">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/imageViewHomeHeight"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/platzi_conf_2" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/homeMarginSubtitle"
+                        android:text="@string/inicio_frag_tv_por_que"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/tamanioTitulo"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/homeMarginSubtitle"
+                        android:layout_marginLeft="@dimen/homeMarginSubtitle"
+                        android:layout_marginTop="@dimen/homeMarginSubtitle"
+                        android:layout_marginRight="@dimen/homeMarginSubtitle"
+                        android:layout_marginBottom="@dimen/homeMarginSubtitle"
+                        android:text="@string/inicio_frag_tv_por_que_resp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/subtitleSize" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:elevation="0dp"
+                app:cardCornerRadius="@dimen/cardCornerRadius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/shape_parrafo">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/imageViewHomeHeight"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/platzi_conf_3" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/homeMarginSubtitle"
+                        android:text="@string/inicio_frag_tv_info"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/tamanioTitulo"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/homeMarginSubtitle"
+                        android:layout_marginLeft="@dimen/homeMarginSubtitle"
+                        android:layout_marginTop="@dimen/homeMarginSubtitle"
+                        android:layout_marginRight="@dimen/homeMarginSubtitle"
+                        android:layout_marginBottom="@dimen/homeMarginSubtitle"
+                        android:text="@string/inicio_frag_tv_info_resp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/subtitleSize" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>
