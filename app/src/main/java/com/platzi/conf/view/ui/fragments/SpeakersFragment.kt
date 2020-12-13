@@ -10,6 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.platzi.conf.R
 import com.platzi.conf.model.Speaker
@@ -39,7 +40,7 @@ private lateinit var viewModel: SpeakersViewModel
         speakerAdapter = SpeakerAdapter(this)
 
         rvSpeakers.apply {
-            layoutManager = LinearLayoutManager(view.context, LinearLayoutManager.VERTICAL, false)
+            layoutManager = GridLayoutManager(context, 2)
             adapter = speakerAdapter
         }
         observeModel()
@@ -47,12 +48,14 @@ private lateinit var viewModel: SpeakersViewModel
 
     fun observeModel() {
         viewModel.listSpeakers.observe(this, Observer<List<Speaker>> { speakers ->
-            speakerAdapter.updateData(speakers)
+            speakers.let {
+                speakerAdapter.updateData(speakers)
+            }
         })
 
         viewModel.isLoading.observe(this, Observer<Boolean> {
             if (it != null)
-                rlBaseSpeaker.visibility = View.INVISIBLE
+                rlBase.visibility = View.INVISIBLE
         })
     }
 
