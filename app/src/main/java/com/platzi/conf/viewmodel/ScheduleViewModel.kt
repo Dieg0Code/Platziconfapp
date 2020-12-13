@@ -14,10 +14,10 @@ class ScheduleViewModel {
     fun refresh() {
         getScheduleFromFirebase()
     }
-
+    // Obtains schedule data from Firebase
     fun getScheduleFromFirebase() {
         firestoreService.getSchedule(object: Callback<List<Conference>> {
-            override fun onSuccess(result: List<Conference>?) {
+            override fun onSuccess(result: MutableList<com.platzi.conf.model.Conference>) {
                 listSchedule.postValue(result)
                 processFinished()
             }

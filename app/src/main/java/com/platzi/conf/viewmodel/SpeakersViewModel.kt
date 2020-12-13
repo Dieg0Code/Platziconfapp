@@ -16,10 +16,10 @@ class SpeakersViewModel: ViewModel() {
     fun refresh() {
         getSpeakersFromFirebase()
     }
-
+    // Obtains Speakers data from Firebase
     fun getSpeakersFromFirebase() {
          firestoreService.getSpeakers(object : Callback<List<Speaker>> {
-             override fun onSuccess(result: List<Speaker>?) {
+             override fun onSuccess(result: MutableList<com.platzi.conf.model.Conference>) {
                  listSpeaker.postValue(result)
                  processFinished()
              }
