@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -15,15 +16,15 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:background="@drawable/shape_parrafo">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="200dp">
@@ -39,14 +40,14 @@
                         android:alpha="0.5"/>
 
                     <TextView
-                            android:id="@+id/tvItemScheduleTituloConferencia"
+                        android:id="@+id/tvItemScheduleTituloConferencia"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Titulo de la conferencia"
                         android:textSize="30sp"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold"
-                        android:gravity="center_horizontal"
+                        android:gravity="center"
                         android:layout_centerInParent="true"/>
                 </RelativeLayout>
 
@@ -54,8 +55,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:cardCornerRadius="4dp"
-                    app:cardElevation="1dp"
-                    android:layout_margin="15dp">
+                    app:cardElevation="1dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
