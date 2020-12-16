@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PlatziConf">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC91iskuEXe5tJLlLNg1KfRzRBJY3D-jS8" />
+
         <activity android:name="com.platzi.conf.view.ui.activities.SplashscreenActivity"></activity>
         <activity android:name=".view.ui.activities.MainActivity">
             <intent-filter>
