@@ -12,13 +12,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@drawable/shape_parrafo">
+        android:background="@drawable/shape_parrafo"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
 
         <ImageView
             android:id="@+id/ivItemSpeakerImage"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/imageViewHomeHeight"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
             android:src="@mipmap/ic_launcher" />
 
         <TextView

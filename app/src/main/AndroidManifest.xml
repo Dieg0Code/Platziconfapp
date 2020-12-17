@@ -12,15 +12,17 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyC91iskuEXe5tJLlLNg1KfRzRBJY3D-jS8" />
+            android:value="API_KEY" />
 
-        <activity android:name="com.platzi.conf.view.ui.activities.SplashscreenActivity"></activity>
-        <activity android:name=".view.ui.activities.MainActivity">
+        <activity android:name="com.platzi.conf.view.ui.activities.SplashscreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".view.ui.activities.MainActivity">
+
         </activity>
     </application>
 

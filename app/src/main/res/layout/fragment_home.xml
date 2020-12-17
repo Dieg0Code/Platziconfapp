@@ -31,7 +31,8 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/imageViewHomeHeight"
-                        android:src="@drawable/banner_platzi_conf" />
+                        android:src="@drawable/banner_platzi_conf"
+                        android:layout_marginTop="1dp"/>
 
                     <View
                         android:layout_width="match_parent"
@@ -72,9 +73,10 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="15dp"
                 app:cardCornerRadius="@dimen/cardCornerRadius"
-                app:cardElevation="0dp">
+                app:cardElevation="0dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -124,8 +126,10 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
                 android:elevation="0dp"
+                android:layout_marginTop="15dp"
                 app:cardCornerRadius="@dimen/cardCornerRadius">
 
                 <LinearLayout
