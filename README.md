@@ -4,7 +4,9 @@ PlatziConf es un proyecto Android desarrollado en Kotlin .
 
 ##### *fuente original [aquí](https://platzi.com/clases/kotlin-android/)*
 
-Este proyecto esta construido con **Jetpack** cuenta con la implementación de **Firestore** como base de datos y **GoogleMapsAPI**. Esta construido con **arquitectura MVVM** .
+Este proyecto cuenta con la implementación de **Firestore** como base de datos y **GoogleMapsAPI**.
+
+Construido con **arquitectura MVVM** .
 
 ## Preview
 
